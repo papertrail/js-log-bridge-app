@@ -3,6 +3,6 @@
   "description": "Tiny app to receive async HTTP requests containing logs, then output the payload",
   "repository": "https://github.com/papertrail/js-log-bridge-app",
   "keywords": ["javascript", "sinatra", "logs", "papertrail"],
-  "addons": [ "papertrail", { "plan": "choklad" } ],
+  "addons": [ "papertrail" ],
   "buildpacks": [ { "url": "heroku/ruby" } ]
 }
