@@ -1,0 +1,6 @@
+{
+  "name": "JavaScript log bridge Sinatra app",
+  "description": "Tiny app to receive async HTTP requests containing logs, then output the payload",
+  "repository": "https://github.com/papertrail/js-log-bridge-app",
+  "keywords": ["javascript", "sinatra", "logs", "papertrail"]
+}
