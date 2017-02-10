@@ -4,5 +4,12 @@
   "repository": "https://github.com/papertrail/js-log-bridge-app",
   "keywords": ["javascript", "sinatra", "logs", "papertrail"],
   "addons": [ "papertrail" ],
-  "buildpacks": [ { "url": "heroku/ruby" } ]
+  "buildpacks": [ { "url": "heroku/ruby" } ],
+  "env": {
+      "APP_URL": {
+        "description": "Your app URL when publicly deployed, e.g. http://www.example.com/",
+        "value": "http://myapp.com",
+		"required": false
+      }
+  }
 }

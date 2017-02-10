@@ -3,7 +3,7 @@ require 'sinatra/cross_origin'
 
 # cross origin setup
 register Sinatra::CrossOrigin
-set :allow_origin,  ['http://localhost/', 'http://127.0.0.1', 'http://myapp.com']
+set :allow_origin,  [ENV['APP_URL']]
 set :allow_methods, [:get, :post, :options]
 
 get '/' do
@@ -12,7 +12,7 @@ end
 
 get '/log' do
  cross_origin
- 'This app accepts GET (with query params) or POST requests to /log from client-side apps. Try it!'
+ 'This app accepts GET (with query params) or POST requests to /log from client-side apps at the configured URL(s). Try it!'
 end
 
 options '/log' do
