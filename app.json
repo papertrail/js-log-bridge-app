@@ -1,5 +1,5 @@
 {
-  "name": "JavaScript log bridge in Sinatra",
+  "name": "Sinatra JavaScript log bridge",
   "description": "Tiny app to receive async HTTP requests containing logs, then output the payload",
   "repository": "https://github.com/papertrail/js-log-bridge-app",
   "keywords": ["javascript", "sinatra", "logs", "papertrail"]
